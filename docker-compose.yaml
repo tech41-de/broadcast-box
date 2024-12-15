@@ -9,6 +9,7 @@ services:
     container_name: broadcast-box
     network_mode: "host"
     privileged: true
+    restart: always
 
   caddy:
     image: lucaslorentz/caddy-docker-proxy:ci-alpine
